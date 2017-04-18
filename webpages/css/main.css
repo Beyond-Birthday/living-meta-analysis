@@ -99,7 +99,8 @@ body > header h2 {
   margin: .5rem;
   margin-right: auto;
   font-weight: normal;
-  font-family: "Raleway";
+
+  font-family: 'Lato', sans-serif;
 }
 
 body > footer {
@@ -124,10 +125,10 @@ body > footer > p {
 
 .alert {
   padding: 1em;
-  background-color: #ff8;
+  background-color: #4CABF4;
   font-size: 120%;
   line-height: 1.2em;
-  border: 1px solid #800;
+  border: 1px solid #000;
   margin: 1em;
   border-radius: .6em;
   font-family: serif;
@@ -182,7 +183,8 @@ main.index > section {
   display: block;
   padding: 4rem 2rem;
   font-weight: normal;
-  font-family: "Raleway";
+
+  font-family: 'Lato', sans-serif;
 }
 
 main.index > section > * {
@@ -192,17 +194,17 @@ main.index > section > * {
 }
 
 main.index > section:nth-of-type(4n+2) {
-  background-color: #90e8ef; /* from poster */
+  background-color: #D6EDFE; /* from poster */
   color: black;
 }
 
 main.index > section:nth-of-type(4n+3) {
-  background-color: #177894; /* from poster */
+  background-color: #208EE2; /* from poster */
   color: white;
 }
 
 main.index > section:nth-of-type(4n+4) {
-  background-color: #c4ebf1; /* from poster */
+  background-color: #D7EEFF; /* from poster */
   color: black;
 }
 
@@ -226,6 +228,7 @@ main.index > section > p {
   line-height: 1.4em;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 main.index > section.columns {

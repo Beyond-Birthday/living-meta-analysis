@@ -932,7 +932,11 @@
 
     var groupT = _.findEl(plotEl, 'template.group-grapes');
     var groupTooltipsT= _.findEl(plotEl, 'template.group-tooltips');
+
+    var currentGroup = -1;
     groups.forEach(function (group, index) {
+
+      currentGroup = currentGroup + 1;
       var groupData = dataGroups[index];
 
       var groupEl = _.cloneTemplate(groupT);
@@ -968,6 +972,10 @@
       groupData.forEach(function (exp, index) {
         // grape
         var grapeEl = _.cloneTemplate(grapeT);
+
+        grapeEl.classList.add('c' + currentGroup%7);
+        console.log(grapeEl.classList);
+
         var tooltipEl = _.cloneTemplate(tooltipT);
         grapeT.parentElement.insertBefore(grapeEl, grapeT);
         tooltipT.parentElement.insertBefore(tooltipEl, tooltipT);
